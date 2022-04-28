@@ -7,6 +7,7 @@ body {
 .row4 .title {
   margin-top: 2px;
   color: #0986B2;
+  font-weight: bold;
 }
 
 .row4 {
@@ -16,12 +17,13 @@ body {
     position: fixed;
     top: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
 }
 
 .row4 .col-sm-4, .col-sm-2 {
-  padding: 2vh;
+  padding: 1vh;
 }
+
 
 nav ul {
   list-style-type: none;
@@ -40,7 +42,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 li a:hover {
@@ -65,6 +67,7 @@ li a:hover {
 
 /* mainbody styles */
 .main-body {
+  /* width:70%; */
   position:relative;
     margin-left: 16%;
     margin-top: 7vh;
@@ -103,6 +106,7 @@ img{
   height: 100%;
   overflow: auto;
   width: 16%;
+  z-index: 1;
 }
 
 .sidebar a {
@@ -167,6 +171,7 @@ div.content {
   border-radius: 5px;
   height: 80%;
   top: 10%;
+  overflow-y: scroll;
 }
 
 .sidenav a {
@@ -176,10 +181,11 @@ div.content {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-size: 18px;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: red;
 }
 
 .sidenav .closebtn {
@@ -190,6 +196,10 @@ div.content {
   margin-left: 50px;
 }
 
+.sidenav a img {
+width: 200px;
+height: 150px;
+}
 .sidenav span {
     color: orange;
     margin-top: 20%;
@@ -304,19 +314,51 @@ footer .copyright {
 /* end of search */
 
 
-.index .breadcrumbs {
+.index .breadcrumbs, .breadcrumbs {
   position:relative;
   top:0;
   text-align: right;
   color: orange;
   margin: 0 20px;
 }
-.index .breadcrumbs .right-sidebar {
+.index .breadcrumbs .right-sidebar , .bread{
   cursor: pointer;
 }
 
 
 /* Listings page */
+
+/* breadcrumbs */
+
+.listings .breadcrumbs {
+  color: orange;
+  display: flex;
+  flex-wrap: nowrap;
+  height:5vh;
+}
+.listings .breadcrumbs .right-sidebar {
+  background-color: whitesmoke ; 
+  border-left: 1px solid #d6d6d6;
+  cursor: pointer;
+  width: 20%;
+  padding: 0 10px;
+  flex-basis: 20%;
+}
+
+.listings .breadcrumb {
+  border-radius:0;
+  background-color: whitesmoke; 
+  height:100%;
+  flex-basis:80%;
+  width: 70%;
+  padding:5px;
+}
+
+.listings .breadcrumb a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: orangered;
+}
 
 
 /* header */
@@ -376,69 +418,77 @@ footer .copyright {
 .listing .page-link {
   color:black;
 }
-
-
 /* end of listings */
 
 
 
 /* Forums Page */
 
-/* breadcrumbs */
+.forum .main-body {
+  margin: 7vh 30px 0 20%;
+}
 
-.forum .breadcrumbs {
-
-  color: orange;
+.forum .header {
   display: flex;
-  flex-wrap: nowrap;
-  background-color: whitesmoke;
+  justify-content: space-between;
 }
-.forum .breadcrumbs .right-sidebar {
-  border:1px solid black;
-  cursor: pointer;
-  width: 20%;
-  flex-basis: 20%
+.forum .heading {
+  margin-top:12px;
 }
 
-.forum .breadcrumb {
-  flex-basis:80%;
-  width: 70%;
-  padding:5px;
+.forum .right {
+  border:1px solid red;
 }
-
-.forum .breadcrumb a {
-  text-decoration: none;
-  margin: 0 5px;
-  color: orangered;
+.forum button {
+  border: 1px solid #0f6986;
+  border-radius: 5px;
+  background-color: inherit;
+  padding: 3px 25px;
+  margin: 30px 50px 0 0;
+  color: #0f6986;
 }
 
 
 /*content*/
-
-/*content*/
-.content .articles .topics .row{
-  position: relative;
-  top:50px;
+.content .topics .row{
   display: grid;
-  grid-template-areas: 'star body body body score';
-  background-color: black;
-  box-shadow: 0 0 2px 5px;
-  border: none;
+  grid-template-areas: 'star body body body body body body body score';
+  box-shadow: #d6d6d6 0 0 5px 0;
   border-radius: 3px;
   padding:5px;
+  margin: 10px 10px 0 20px;
+  height: 100px;
+}
+.forum .topics .star {
+  grid-area: star;
+  margin: 25px 0 0 70px;
 
 }
-.star {
-  grid-area: star;
-}
 .star img {
-  width: 50px;
+  height: 35px;
   object-position: center;
   object-fit: cover;
 }
-.body {
+.forum .topics .body {
   grid-area: body;
 }
-.score {
+.forum .topics .body h6 {
+  font-weight: bold;
+  margin-top:15px;
+}
+.forum .topics .body .time {
+  color:#54a8c7;
+}
+.forum .topics .body .p {
+ color:#818181
+}
+.forum .topics .body .p, .forum .topics .body .time {
+  font-size: 12px;
+}
+.forum .topics .score {
   grid-area: score;
+  margin-top:35px;
+  color:#D6691E;
+  font-size: 12px;
+  font-weight: bold;
 }
