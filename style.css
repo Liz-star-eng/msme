@@ -65,8 +65,9 @@ li a:hover {
 
 /* mainbody styles */
 .main-body {
-    margin-left: 17%;
-    margin-top: 10vh;
+  position:relative;
+    margin-left: 16%;
+    margin-top: 7vh;
 }
 
 
@@ -90,28 +91,34 @@ img{
     width: 100%;
 }
 
+/* h3 {
+  color:#3b82f6; text-align: center; margin-top: 5%;
+} */
+
 /* left navbar */
 .sidebar {
-  margin: 0;
   padding: 0;
-  width: 15.5%;
   background-color: #0986B2;
   position: fixed;
   height: 100%;
   overflow: auto;
-  margin-top: 7vh;
+  width: 16%;
 }
 
 .sidebar a {
   display: block;
   color: white;
-  padding: 16px;
+  padding: 16px 10px;
   text-decoration: none;
 }
 
 .sidebar a:hover:not(.active) {
   background-color: #54a8c7;
   color: white;
+}
+
+.leftbar{
+  margin-top: 10vh;
 }
 
 .sidebar h4 {
@@ -183,10 +190,10 @@ div.content {
   margin-left: 50px;
 }
 
-span {
-    margin-left: 80%; 
-    color: #FDD2B5;
-    margin-top: 10%;
+.sidenav span {
+    color: orange;
+    margin-top: 20%;
+    margin-left: 80%;    
 }
 
 /* end of right sidenav */
@@ -296,20 +303,21 @@ footer .copyright {
 }
 /* end of search */
 
+
+.index .breadcrumbs {
+  position:relative;
+  top:0;
+  text-align: right;
+  color: orange;
+  margin: 0 20px;
+}
+.index .breadcrumbs .right-sidebar {
+  cursor: pointer;
+}
+
+
 /* Listings page */
 
-/* breadcrumbs */
-.breadcrumb {
-  color: orange;
-  padding:5px;
-  background-color: whitesmoke;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  margin: 0 5px;
-  color: orangered;
-}
 
 /* header */
 
@@ -375,6 +383,38 @@ footer .copyright {
 
 
 /* Forums Page */
+
+/* breadcrumbs */
+
+.forum .breadcrumbs {
+
+  color: orange;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: whitesmoke;
+}
+.forum .breadcrumbs .right-sidebar {
+  border:1px solid black;
+  cursor: pointer;
+  width: 20%;
+  flex-basis: 20%
+}
+
+.forum .breadcrumb {
+  flex-basis:80%;
+  width: 70%;
+  padding:5px;
+}
+
+.forum .breadcrumb a {
+  text-decoration: none;
+  margin: 0 5px;
+  color: orangered;
+}
+
+
+/*content*/
+
 /*content*/
 .content .articles .topics .row{
   position: relative;
