@@ -20,4 +20,17 @@ function collapsible() {
   }
 }
 
+
+//DROPDOWN
+const content = document.getElementById("a")
+a.style.backgroundColor = 'white';
+tippy("#dropdown", {
+  content: a.innerHTML,
+  allowHTML: true,
+  placement: "bottom",
+  animation: "fade",
+  interactive: true,
+ theme: 'light',
+});
+
   // collapsible();

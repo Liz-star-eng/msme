@@ -248,6 +248,7 @@ footer {
 
 
 /* dropdown content */
+
  .dropbtn {
   display: inline-block;
   color: inherit;
@@ -464,16 +465,12 @@ footer .copyright {
 
 /* Forums Page */
 
-/* .forum .main-body {
-  margin: 7vh 30px 0 20%;
-} */
-
 .forum .header {
   display: flex;
   justify-content: space-between;
 }
 .forum .heading {
-  margin-top:12px;
+  margin: 12px 0 0 0;
 }
 
 .forum .right {

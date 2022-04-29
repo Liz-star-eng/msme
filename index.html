@@ -8,9 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tippy.js@6/animations/scale.css"
+/>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="index">
@@ -22,11 +26,11 @@
       <div class="col-sm-6">
       <nav>
           <ul>
-               <li class="dropdown"><a href="listings.html" class="dropbtn"><i class="fa fa-folder-open-o"></i> Information Hub <i class="fa fa-chevron-down"></i></a>
+               <li id="dropdown" class="dropdown"><a href="listings.html" class="dropbtn"><i class="fa fa-folder-open-o"></i> Information Hub <i class="fa fa-chevron-down"></i></a>
                 <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a id="a" href="advert detils.html">Industry-Specific Information</a>
+                  <a id="a" href="#">Link 2</a>
+                  <a id="a" href="#">Link 3</a>
                 </div>
             </li>
              <li><a href="forum.html"><i class="fa fa-comment-o "></i> Entreprenuers' Forum <i class="fa fa-chevron-down"></i></a></li>
@@ -88,7 +92,7 @@
       ><i>show Right Panel<i class="fa fa-angle-right" style="font-size:24px; margin-left: 5px;"></i></i></span
     >
 
-   <div id="main-body" class="main-body" onclick="collapsible()"  >
+   <div id="main-body" class="main-body" onclick="collapsible()">
     
       <!-- breadcrumbs -->
       <div class="breadcrumbs">
@@ -208,7 +212,11 @@
         <div class="copyright"><p>C Copyright © MSME Gateway | <strong>Powered by AITI-KACE</strong></p></div>
       </footer>
     <!-- Footer --> 
-
+      <script>
+        
+      </script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="JS/index.js"></script>
 
   </body>
