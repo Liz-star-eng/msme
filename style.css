@@ -268,7 +268,6 @@ li.dropdown {
 /* Footer */
 /* Footer */
 
-/**/
 footer {
   width: 100vw;
   height: 300px;
@@ -403,7 +402,7 @@ footer .copyright {
 }
 
 
-.listing ..column a {
+.listing .column a {
   text-decoration: none;
   color:black;
   transition: .3s ease;
