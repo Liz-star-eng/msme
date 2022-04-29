@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 /* topnavbar */
@@ -67,9 +68,7 @@ li a:hover {
 
 /* mainbody styles */
 .main-body {
-  /* width:70%; */
-  position:relative;
-    margin-left: 16%;
+    margin-left: 17%;
     margin-top: 7vh;
 }
 
@@ -139,7 +138,6 @@ img{
   width: 150px;
   margin-left: 40%;
   padding: 10px;
-  position: sticky;
 }
 
 div.content {
@@ -269,6 +267,8 @@ li.dropdown {
 
 /* Footer */
 /* Footer */
+
+/**/
 footer {
   width: 100vw;
   height: 300px;
