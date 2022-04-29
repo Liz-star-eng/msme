@@ -211,6 +211,8 @@ height: 150px;
 footer {
   background-color: #0986B2;
   color: white;
+  position:relative;
+  bottom: 0;
 }
 
 .links a {
@@ -316,6 +318,7 @@ footer .copyright {
 
 .index .breadcrumbs, .breadcrumbs {
   position:relative;
+  background-color: white;
   top:0;
   text-align: right;
   color: orange;
@@ -337,7 +340,7 @@ footer .copyright {
   height:5vh;
 }
 .listings .breadcrumbs .right-sidebar {
-  background-color: whitesmoke ; 
+  background-color: whitesmoke ;
   border-left: 1px solid #d6d6d6;
   cursor: pointer;
   width: 20%;
@@ -347,7 +350,7 @@ footer .copyright {
 
 .listings .breadcrumb {
   border-radius:0;
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
   height:100%;
   flex-basis:80%;
   width: 70%;
@@ -491,4 +494,59 @@ footer .copyright {
   color:#D6691E;
   font-size: 12px;
   font-weight: bold;
+}
+
+
+/* Listing Advert Detail */
+.listing-advert .header {
+  display:grid;
+  grid-template-areas: 'left right';
+  justify-content: space-between;
+}
+
+.listing-advert .left{
+  grid-area: left;
+  margin-left: 20px;
+}
+.listing-advert .left .heading {
+    font-weight: bold;
+    margin-top:10px;
+    font-style: normal;
+}
+.listing-advert .right {
+  grid-area: right;
+  margin-right: 20vw;
+}
+
+.listing-advert .right img {
+  /*width: 250px;*/
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.listing-advert .main {
+  margin:0 30px 200px 30px;
+ font-family: sans-serif, arial;
+  font-style: normal;
+}
+.listing-advert .main .topic {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+
+.listing-advert .main .list-head, .listing-advert .main .REFERENCE {
+  margin-top: 30px;
+  text-decoration: underline;
+  list-style-position: outside;
+}
+.listing-advert .main .REFERENCE {
+  margin:50px 0;
+}
+
+.listing-advert .main li {
+  padding:10px;
+  text-decoration: none !important;
+  margin-bottom:10px;
 }
