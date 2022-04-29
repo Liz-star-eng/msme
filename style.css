@@ -37,7 +37,7 @@ nav li {
     float: left;
 }
 
-nav li a {
+nav li a  {
   display: block;
   color: black;
   text-align: center;
@@ -286,7 +286,7 @@ li.dropdown {
 .dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block !important;
 }
 
 /* end of dropdown */
@@ -408,7 +408,8 @@ footer .copyright {
 
 
 .listings .main-body {
-  margin: 2vh 0 0 16%;
+  margin-left: 16% !important;
+  width: 100vw;
 }
 
 /* list of items */
