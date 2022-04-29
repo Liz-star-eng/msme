@@ -368,8 +368,12 @@ footer .copyright {
 
 .header {
   font-family: sans-serif;
+  margin-left:40px;
 }
 
+.heading {
+  text-align: center;
+}
 .header p {
   color:#818181
 }
@@ -377,34 +381,34 @@ footer .copyright {
 
 /* list of items */
 
-.listing .col-4 {
+.listing .column {
   width:30%;
   text-align:center;
 }
 
-.listing .img {
-  height:170px;
+.listing .column .img {
+  height:200px;
   overflow: hidden;
   border-radius: 5px;
 }
-.listing img {
+.listing .column img {
   border-radius: 5px;
-  height:170px;
+  width:370px;
   object-fit: cover;
   transition: .4s ease;
 }
 
-.listing img:hover {
+.listing .column img:hover {
   transform: scale(120%)
 }
 
 
-.listing .col-4 a {
+.listing ..column a {
   text-decoration: none;
   color:black;
   transition: .3s ease;
 }
-.listing .col-4 a:hover {
+.listing .column  a:hover {
   color:green;
 }
 
