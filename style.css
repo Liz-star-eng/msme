@@ -403,7 +403,7 @@ footer .copyright {
 }
 
 
-.listing ..column a {
+.listing .column a {
   text-decoration: none;
   color:black;
   transition: .3s ease;
