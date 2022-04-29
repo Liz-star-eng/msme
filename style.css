@@ -47,12 +47,21 @@ nav li a {
 }
 
 li a:hover {
-  background-color: orange;
-  color: #0f6986;
+  color: orangered;
+  background-color: white !important;
+  border-radius: 10px;
+  height: 5vh;
+  margin: 10px;
+  padding: 5px;
+
 }
 .search {
   display:flex;
   flex-wrap: nowrap;
+}
+
+.search .form-control {
+  width: 25vw;
 }
 .search .search-icon {
   text-align: center;
@@ -61,6 +70,7 @@ li a:hover {
   width:40px;
   height:40px;
   border-radius: 100%;
+  margin-left: 5px;
 }
 
 
@@ -115,9 +125,10 @@ img{
   text-decoration: none;
 }
 
-.sidebar a:hover:not(.active) {
-  background-color: #54a8c7;
-  color: white;
+.sidebar a:hover{
+  color: rgb(214, 214, 75);
+  margin-left: 30px;
+  transition: 0.4s;
 }
 
 .leftbar{
@@ -130,23 +141,33 @@ img{
   margin-top: 100%;
   margin-right: 10px;
 }
-.sidebar .input {
+.sidebar .a {
   border: 1px solid yellow;
   color: yellow;
-  border-radius: 50px;
+  border-radius: 70px;
   text-align: center;
-  width: 150px;
-  margin-left: 40%;
-  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+  margin-left: 50%;
+  padding: 13px;
+  margin-top: 20%;
 }
 
-div.content {
-  margin-right: 200px;
+.sidebar .a:hover {
+background-color: rgb(15, 175, 228);
+transition: 0.3s;
+}
+
+div .content {
   padding: 1px 16px;
   height: 1000px;
 }
 
-
+.carousel {
+  height: 55vh;
+   width: 80%;
+}
 /* carousel */
 .carousel-inner video {
   width: 100%;
@@ -202,6 +223,12 @@ height: 150px;
     color: orange;
     margin-top: 20%;
     margin-left: 80%;    
+}
+
+/*Direct links*/
+.links .text {
+  color: green;
+  font-weight: bold;
 }
 
 /* end of right sidenav */
@@ -271,7 +298,6 @@ li.dropdown {
 footer {
   width: 100vw;
   height: 300px;
-  position: relative;
   text-align: center;
   background-color: #0986B2;
   color:white;
@@ -316,9 +342,7 @@ footer .copyright {
 
 
 .index .breadcrumbs, .breadcrumbs {
-  position:relative;
   background-color: white;
-  top:0;
   text-align: right;
   color: orange;
   margin: 0 20px;
@@ -327,19 +351,19 @@ footer .copyright {
   cursor: pointer;
 }
 
-
 /* Listings page */
 
 /* breadcrumbs */
 
 .listings .breadcrumbs {
+  margin-bottom:20px;
   color: orange;
   display: flex;
   flex-wrap: nowrap;
   height:5vh;
 }
 .listings .breadcrumbs .right-sidebar {
-  background-color: whitesmoke ;
+  background-color: white ;
   border-left: 1px solid #d6d6d6;
   cursor: pointer;
   width: 20%;
@@ -349,11 +373,15 @@ footer .copyright {
 
 .listings .breadcrumb {
   border-radius:0;
-  background-color: whitesmoke;
+  background-color: white;
   height:100%;
   flex-basis:80%;
   width: 70%;
   padding:5px;
+}
+
+.listings .breadcrumbs li {
+  display: inline;
 }
 
 .listings .breadcrumb a {
@@ -367,7 +395,7 @@ footer .copyright {
 
 .header {
   font-family: sans-serif;
-  margin-left:40px;
+  margin-left:60px;
 }
 
 .heading {
@@ -378,11 +406,16 @@ footer .copyright {
 }
 
 
+.listings .main-body {
+  margin: 2vh 0 0 16%;
+}
+
 /* list of items */
 
 .listing .column {
-  width:30%;
+  width:25%;
   text-align:center;
+  margin:25px;
 }
 
 .listing .column .img {
@@ -398,7 +431,8 @@ footer .copyright {
 }
 
 .listing .column img:hover {
-  transform: scale(120%)
+  transform: scale(120%);
+  filter: brightness(0.5);
 }
 
 
@@ -430,9 +464,9 @@ footer .copyright {
 
 /* Forums Page */
 
-.forum .main-body {
+/* .forum .main-body {
   margin: 7vh 30px 0 20%;
-}
+} */
 
 .forum .header {
   display: flex;
@@ -462,7 +496,7 @@ footer .copyright {
   box-shadow: #d6d6d6 0 0 5px 0;
   border-radius: 3px;
   padding:5px;
-  margin: 10px 10px 0 20px;
+  margin: 10px 50px 0 20px;
   height: 100px;
 }
 .forum .topics .star {
@@ -552,4 +586,40 @@ footer .copyright {
   padding:10px;
   text-decoration: none !important;
   margin-bottom:10px;
+}
+
+
+/* styles for industry Spceific Information (ISI)*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  gap: 10px;
+  padding: 30px;
+}
+
+/* .gird-containeer a {
+ width: 100%;
+ height: 100%;
+border-radius: 5px;
+} */
+
+.grid-container img {
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.4s ease;
+}
+
+
+.grid-container img:hover{
+  transform: scale(110%);
+  filter: brightness(0.5);
+}
+
+.grid-container > div{
+  border-radius: 5px;
+  overflow: hidden;
 }

@@ -8,11 +8,16 @@ function closeNav() {
 
 let sidebar = document.getElementById("mySidenav");
 var body = document.getElementById("main-body");
+var span = document.getElementById("span");
 
 function collapsible() {
   if ((sidebar.style.width = "16%")) {
     body.style.marginRight = "16%";
+    span.innerHTML = "Hide Side panel >>>"
   }  else {
-      body.style.marginRight = "0";
+      body.style.marginight = "0";
+      span.innerHTML = "Show Right side<<<"
   }
 }
+
+  // collapsible();
