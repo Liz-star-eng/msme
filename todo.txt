@@ -1,12 +1,9 @@
-refactor all sidebars
 
-fix footer on details
 write product ads page
 
 
 
 polish listings content
-fix listings footer
 
 write a login and signup form (hidden right sidebar)
 
