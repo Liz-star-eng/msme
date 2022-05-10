@@ -79,7 +79,7 @@ li a:hover {
 .main-body {
   margin-left: 17%;
   margin-top: 7vh;
-  width: 80%;
+  width: 90%;
 }
 
 .row-2 {
@@ -157,6 +157,8 @@ img {
   background-color: rgb(15, 175, 228);
   transition: 0.3s;
 }
+
+/* end of left side bar */
 
 div .content {
   padding: 1px 16px;
@@ -266,7 +268,7 @@ li.dropdown {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
