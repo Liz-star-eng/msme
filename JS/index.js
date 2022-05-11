@@ -3,15 +3,15 @@ var body = document.getElementById("main-body");
 var span = document.getElementById("span");
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "16%";
-  body.style.marginRight = "16%";
-  span.innerHTML = "Hide Side panel >>>";
+ sidebar.style.width = "16%";
+ body.style.width = "73%"
+ body.style.marginRight = "16%"
+ span.innerHTML = "Close Side Panel >>>"
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  body.style.marginRight = "0";
-  span.innerHTML = "Show Right Panel<<<";
+sidebar.style.width = "0";
+  body.style.width = "90%";
+  span.innerHTML = "Open Side Panel <<<";
 }
 
-collapsible();

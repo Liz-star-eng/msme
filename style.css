@@ -79,7 +79,7 @@ li a:hover {
 .main-body {
   margin-left: 17%;
   margin-top: 7vh;
-  width: 90%;
+  width: 90%; 
 }
 
 .row-2 {
@@ -92,9 +92,12 @@ li a:hover {
 .col-sm-4 img {
   border-radius: 10px;
   width: 100%;
+  object-fit: cover;
 }
 img {
   height: 300px;
+  object-fit: cover;
+    width: 100%;
 }
 
 .col-4 img {
@@ -137,7 +140,9 @@ img {
 .sidebar h4 {
   text-align: right;
   color: white;
-  margin-top: 100%;
+  margin-top: 0%;
+  position: sticky;
+  top: 0;
   margin-right: 10px;
 }
 .sidebar .a {
@@ -220,7 +225,7 @@ div .content {
   width: 200px;
   height: 150px;
 }
-.sidenav span {
+.main-body .right-sidebar {
   color: orange;
   margin-top: 20%;
   margin-left: 80%;
@@ -306,6 +311,7 @@ footer {
   color: white;
   position: relative;
   margin-top: 99%;
+  z-index: 99;
 }
 footer .row {
   margin: 0 50px;
